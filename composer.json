@@ -1,0 +1,14 @@
+{
+    "name": "bilge/what-is-my-ip",
+    "description": "Outputs your WAN IP address.",
+    "require": {
+        "php": "^7",
+        "amphp/artax": "^3"
+    },
+    "authors": [
+        {
+            "name": "Bilge",
+            "email": "bilge@scriptfusion.com"
+        }
+    ]
+}

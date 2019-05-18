@@ -1,0 +1,21 @@
+notifications:
+  email: false
+
+sudo: false
+
+language: php
+
+php:
+  - '7.1'
+
+cache:
+  directories:
+    - vendor
+
+install:
+  - alias composer=composer\ -n && composer selfupdate
+  - composer validate
+  - composer install --no-progress --no-suggest
+
+script:
+  - HTTPS_PROXY=https://s2.codelegance.com:47982 bin/wimi
